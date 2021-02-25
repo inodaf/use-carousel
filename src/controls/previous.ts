@@ -1,6 +1,6 @@
-export function previous(current: number): number {
-  const nextPosition = current - 1
+export function previous(currentPosition: number): number {
+  const nextPosition = currentPosition - 1
   const isBelowLimit = nextPosition < 0
 
-  return isBelowLimit ? current : nextPosition
+  return isBelowLimit ? currentPosition : nextPosition
 }
