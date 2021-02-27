@@ -1,4 +1,4 @@
-# 🎠 <code>use-carousel</code> · <small>`v0.1.0`</small>
+# 🎠 use-carousel · <small>v0.1.0</small>
 A [React Hook](https://reactjs.org/docs/hooks-intro.html) for easily creating interactive presentations.
 
 - **Styleless:** Composable properties ready for any situation with no enforced styling rules.
