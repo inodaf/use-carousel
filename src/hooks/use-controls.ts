@@ -5,8 +5,8 @@ import { Controls } from '../controls'
 export function useControls(
   currentPosition: number,
   contentLength: number,
-  setCurrentPosition: (value: number) => any,
-  options: ICarouselControlsHookOptions
+  setCurrentPosition: (value: number) => unknown,
+  options?: ICarouselControlsHookOptions
 ): ICarouselControls {
   const goTo = useCallback(
     (desiredPosition: number) =>
@@ -20,7 +20,7 @@ export function useControls(
 
   const next = useCallback(() => {
     setCurrentPosition(Controls.next(currentPosition, contentLength))
-    if (options.isLoopEnabled && options.isLastCarouselPosition) restart()
+    if (options?.isLoopEnabled && options?.isLastCarouselPosition) restart()
   }, [setCurrentPosition, currentPosition, contentLength, options, restart])
 
   const previous = useCallback(
