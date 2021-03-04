@@ -6,8 +6,8 @@ export interface ICarouselControls {
 }
 
 export interface ICarouselControlsHookOptions {
-  isLoopEnabled: boolean
-  isLastCarouselPosition: boolean
+  isLoopEnabled?: boolean
+  isLastCarouselPosition?: boolean
 }
 
 export interface ICarouselHook extends ICarouselControls {
