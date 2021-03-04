@@ -2,8 +2,11 @@
 A [React Hook](https://reactjs.org/docs/hooks-intro.html) for easily creating interactive presentations.
 
 - **Styleless:** Composable properties ready for any situation with no enforced styling rules.
+- **Nano-weight:** Less than `1.60kb` minified and `650b` compressed with `gzip`.
 
 ## Installation
+The package is available through the npm registry for easy installation.
+
 ```sh
 yarn add @inodaf/use-carousel
 ```
