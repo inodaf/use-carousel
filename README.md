@@ -1,4 +1,4 @@
-# 🎠 <code>use-carousel</code> · <small>`v0.1.0`</small>
+# 🎠 use-carousel · <small>v0.1.0</small>
 A [React Hook](https://reactjs.org/docs/hooks-intro.html) for easily creating interactive presentations.
 
 - **Styleless:** Composable properties ready for any situation with no enforced styling rules.
@@ -9,28 +9,31 @@ yarn add @inodaf/use-carousel
 ```
 
 ## Basic Usage
-```tsx
-import { useCarousel } from '@inodaf/use-carousel'
 
+Import the `useCarousel` hook function.
+```ts
+import { useCarousel } from '@inodaf/use-carousel'
+```
+
+Define the carousel items. They can be of any kind, even JavaScript primitives. In this case we defined some image elements with dog pictures.
+```ts
 const items = [
   <img src="cute-dogo.png" alt="My dog" />,
   <img src="cute-dogo-2.png" alt="My other dog" />
 ];
+```
 
-function MyPage() {
-  const { previous, next, carouselItem } = useCarousel(items)
+Create a component and attach the `useCarousel` hook into it. Now reference the `items` on the hook's first argument.
+```tsx
+function Gallery() {
+  const { carouselItem, previous, next } = useCarousel(items)
 
   return (
-    <article>
-      <h1>My Dogs</h1>
-      <div>
-        {carouselItem}
-      </div>
-      <div>
-        <button onClick={previous}>Previous</button>
-        <button onClick={next}>Next</button>
-      </div>
-    </article>
+    <>
+      <div>{carouselItem}</div>
+      <button onClick={previous}>Previous</button>
+      <button onClick={next}>Next</button>
+    </>
   )
 }
 ```
