@@ -1,11 +1,12 @@
 {
   "name": "@inodaf/use-carousel",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A React Hook for creating interactive presentations & sliders.",
   "files": [
     "LICENSE",
     "README.md",
-    "dist"
+    "dist",
+    "src/d.ts"
   ],
   "main": "./dist/use-carousel.umd.js",
   "module": "./dist/use-carousel.es.js",
