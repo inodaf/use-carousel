@@ -1,13 +1,19 @@
 {
   "name": "@inodaf/use-carousel",
-  "version": "0.2.1",
-  "description": "A React Hook for creating interactive presentations.",
+  "version": "0.2.2",
+  "description": "A React Hook for creating interactive presentations & sliders.",
   "files": [
+    "LICENSE",
+    "README.md",
     "dist"
   ],
   "main": "./dist/use-carousel.umd.js",
   "module": "./dist/use-carousel.es.js",
-  "repository": "git@github.com:inodaf/use-carousel.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inodaf/use-carousel.git"
+  },
+  "bugs": "https://github.com/inodaf/use-carousel/issues",
   "author": "Isac Fadoni <https://github.com/inodaf>",
   "license": "MIT",
   "private": false,
